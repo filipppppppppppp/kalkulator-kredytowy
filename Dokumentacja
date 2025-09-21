@@ -1,0 +1,113 @@
+Dokumentacja Projektu - Kalkulator Kredytowy
+📋 Opis Założeń
+Cel Aplikacji
+Aplikacja internetowa "Kalkulator Kredytowy" została stworzona w celu umożliwienia użytkownikom szybkiego obliczania miesięcznych rat kredytu hipotecznego lub konsumenckiego. Program spełnia wymagania na ocenę 3.5, implementując funkcjonalny formularz przetwarzający wprowadzone dane.
+Funkcjonalności
+•	Formularz kalkulacyjny - główny element aplikacji umożliwiający wprowadzenie: 
+o	Kwoty kredytu (1,000 - 10,000,000 PLN)
+o	Oprocentowania rocznego (0.1% - 50%)
+o	Okresu spłaty (1 - 50 lat)
+•	Przetwarzanie danych - aplikacja automatycznie oblicza: 
+o	Miesięczną ratę kredytu
+o	Łączną kwotę do spłaty
+o	Łączne odsetki
+•	Przyjazny interfejs - responsywna strona internetowa z intuicyjnym designem
+•	Walidacja danych - sprawdzanie poprawności wprowadzonych wartości
+Technologie Użyte
+•	Java - główny język programowania
+•	HTTP Server - wbudowany serwer Java do obsługi żądań HTTP
+•	HTML/CSS - frontend aplikacji
+•	Wzorce matematyczne - implementacja wzoru na ratę annuitetową
+🚀 Prezentacja Działania Programu
+Ekran Główny
+Po uruchomieniu aplikacji użytkownik widzi:
+1.	Nagłówek z tytułem "Kalkulator Kredytowy"
+2.	Pole informacyjne wyjaśniające przeznaczenie aplikacji
+3.	Formularz z trzema polami: 
+o	Kwota kredytu (z ikoną 💰)
+o	Oprocentowanie roczne (z ikoną 📈)
+o	Okres spłaty w latach (z ikoną 📅)
+4.	Przycisk "Oblicz ratę" do wysłania formularza
+Proces Kalkulacji
+1.	Użytkownik wypełnia wszystkie pola formularza
+2.	Po kliknięciu "Oblicz ratę" dane są przesyłane do serwera
+3.	Aplikacja przetwarza dane używając wzoru matematycznego na ratę annuitetową
+4.	Wyniki są prezentowane na nowej stronie
+Strona Wyników
+Zawiera:
+1.	Główny wynik - miesięczna rata w dużej, kolorowej ramce
+2.	Szczegóły kredytu - tabela z wszystkimi parametrami: 
+o	Kwota kredytu
+o	Oprocentowanie
+o	Okres spłaty (w latach i miesiącach)
+o	Łączna kwota do spłaty
+o	Łączne odsetki
+3.	Ostrzeżenie o orientacyjnym charakterze obliczeń
+4.	Przycisk powrotu do strony głównej
+Wzór Matematyczny
+Aplikacja używa standardowego wzoru na ratę annuitetową:
+R = P * [r * (1 + r)^n] / [(1 + r)^n - 1]
+
+gdzie:
+R = miesięczna rata
+P = kwota kapitału
+r = miesięczna stopa procentowa (roczna/12)
+n = liczba rat (lata * 12)
+💻 Instrukcja Uruchomienia
+Wymagania Systemowe
+•	Java Development Kit (JDK) w wersji 8 lub wyższej
+•	Dowolny edytor tekstu lub IDE (np. Visual Studio Code, IntelliJ IDEA)
+•	Przeglądarka internetowa
+Krok po Kroku
+1.	Przygotowanie środowiska
+2.	# Sprawdź czy masz zainstalowaną Javę
+3.	java -version
+4.	javac -version
+5.	Utworzenie projektu
+o	Utwórz nowy folder na projekt, np. kalkulator-kredytowy
+o	Otwórz folder w edytorze tekstu
+6.	Utworzenie pliku
+o	Utwórz plik Main.java
+o	Skopiuj cały kod z sekcji "Kod Aplikacji"
+7.	Kompilacja
+8.	# Przejdź do folderu z projektem
+9.	cd kalkulator-kredytowy
+10.	
+11.	# Skompiluj program
+12.	javac Main.java
+13.	Uruchomienie
+14.	# Uruchom aplikację
+15.	java Main
+16.	Testowanie
+o	Otwórz przeglądarkę
+o	Wejdź na adres: http://localhost:8080
+o	Przetestuj kalkulator z różnymi danymi
+17.	Zatrzymanie
+o	W terminalu naciśnij Ctrl+C aby zatrzymać serwer
+Przykładowe Dane Testowe
+•	Kredyt mieszkaniowy: 500,000 PLN, 5% rocznie, 25 lat
+•	Kredyt konsumencki: 50,000 PLN, 8% rocznie, 5 lat
+•	Mały kredyt: 10,000 PLN, 12% rocznie, 2 lata
+
+Struktura Projektu
+kalkulator-kredytowy/
+├── Main.java              # Główny plik aplikacji
+├── README.md              # Dokumentacja projektu
+└── .gitignore            # Pliki ignorowane przez Git
+✅ Spełnienie Wymagań na Ocenę 3.5
+Wymagany Element: Formularz Przetwarzający Dane
+✓ Zaimplementowany - Aplikacja zawiera w pełni funkcjonalny formularz, który:
+•	Przyjmuje dane od użytkownika (kwota, oprocentowanie, okres)
+•	Waliduje wprowadzone wartości
+•	Przetwarza dane matematycznie
+•	Prezentuje wyniki obliczeń
+•	Umożliwia powrót do ponownej kalkulacji
+Dodatkowe Zalety
+•	Estetyczny design - nowoczesny, responsywny interfejs
+•	Użyteczność - praktyczne zastosowanie w życiu codziennym
+•	Intuicyjność - łatwy w obsłudze dla każdego użytkownika
+•	Dokładność - precyzyjne obliczenia finansowe
+•	Bezpieczeństwo - walidacja danych wejściowych
+🎯 Podsumowanie
+Aplikacja "Kalkulator Kredytowy" spełnia wszystkie wymagania na ocenę 3.5, oferując kompletne rozwiązanie do obliczania rat kredytowych. Program jest napisany w języku Java, wykorzystuje wbudowany serwer HTTP i prezentuje dane za pomocą przyjaznego interfejsu webowego.
+Autor: Filip Nocoń
